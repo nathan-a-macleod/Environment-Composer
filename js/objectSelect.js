@@ -18,23 +18,3 @@ sceneTree.addEventListener("click", function(event){
 let dragged = false;
 document.body.addEventListener('mousedown', function () { dragged = false });
 document.body.addEventListener('mousemove', function () { dragged = true });
-
-/*renderer.domElement.addEventListener("click", function(e){
-    if (dragged == true){
-        return;
-    }
-
-    let ray = new THREE.Raycaster();
-
-    let mouse = {};
-  	mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
-  	mouse.y = - (e.clientY / window.innerHeight) * 2 + 1;
-
-    ray.setFromCamera(mouse, camera);
-
-    let intersects = ray.intersectObjects(scene.children);
-    let intersectedObject = intersects[0].object;
-
-    selectedObject = intersects[0].object;
-    update_project();
-});*/
